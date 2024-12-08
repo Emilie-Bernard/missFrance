@@ -5,7 +5,6 @@ import { getInstagramMiss } from "@/utils/instagram";
 const MissPage = async ({ params }: { params: { missId: string } }) => {
     const { result: miss } = await getNotionMissByRegion(params.missId) as { result: Miss };
     const { result: instagramMiss } = await getInstagramMiss(miss.instagram);
-    console.log(instagramMiss);
     if (!miss) {
         return <p>No data available</p>;
     }

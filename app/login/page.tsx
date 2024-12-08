@@ -12,6 +12,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const router = useRouter();
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
@@ -20,16 +21,14 @@ const LoginPage = () => {
       method: 'POST',
       body: JSON.stringify({ email, password }),
     });
-    console.log(response);
     const data = await response.json();
-    console.log(data);
     if (data.error) {
       setError(data.error);
     }
     else if (data.id) {
       setUser(data);
       setLoading(false);
-      return router.push('/miss');  
+      return router.push('/');  
     }
     setLoading(false);
   };

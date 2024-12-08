@@ -28,7 +28,6 @@ const SignupPage = () => {
       method: 'POST',
       body: JSON.stringify({ email, firstName, lastName, password }),
     });
-    console.log(response);
     const data = await response.json();
     if (data.error) {
       setError(data.error);
@@ -36,7 +35,7 @@ const SignupPage = () => {
     if (data.id) {
       setUser(data);
       setLoading(false);
-      return router.push('/miss');
+      return router.push('/');
     } 
     setLoading(false);
   };

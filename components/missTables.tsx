@@ -37,7 +37,7 @@ const Tables: React.FC<TablesProps> = ({ miss }) => {
                         <TableCell className="rounded-l-lg">{miss.region}</TableCell>
                         <TableCell>{miss.name}</TableCell>
                         <TableCell>{miss.age}</TableCell>
-                        <TableCell>{miss.height}</TableCell>
+                        <TableCell className="rounded-r-lg">{miss.height}</TableCell>
                     </TableRow>
                 ))
             )}
