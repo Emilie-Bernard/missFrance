@@ -1,5 +1,5 @@
 import { getNotionMiss } from "@/utils/notion";
-import { Tables } from "@/components/missTables";
+import { Tables } from "@/components/MissTables";
 import { Miss } from "@/interfaces/missInterface";
 
 const MissPage = async () => {

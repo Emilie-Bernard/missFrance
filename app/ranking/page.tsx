@@ -4,7 +4,6 @@ import { User } from "@prisma/client";
 import { useEffect, useState } from "react";
 
 export default function Ranking() {
-
     const [users, setUsers] = useState<User[]>([]);
     useEffect(() => {
         const fetchUsers = async () => {

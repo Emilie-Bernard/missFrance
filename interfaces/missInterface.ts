@@ -21,3 +21,16 @@ export interface NotionMissProperties {
 export interface NotionMiss extends Omit<PageObjectResponse, 'properties'> {
     properties: NotionMissProperties;
   }
+
+  export interface MissWithGrade {
+    name: string;
+    region: string;
+    age: number;
+    height: string;
+    city: string;
+    instagram: string;
+    elegance: number;
+    beauty: number;
+    eloquence: number;
+    finalNote: number;
+}

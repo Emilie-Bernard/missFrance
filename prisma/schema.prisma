@@ -25,11 +25,12 @@ model User {
 model MissGrade {
   id    String   @id @default(cuid())
   userId   String
+  missId   String
   elegance Int
   beauty   Int
   eloquence Int
   presentation Int
-  note       String?
+  finalNote Int
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
 }

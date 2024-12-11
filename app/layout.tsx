@@ -30,9 +30,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center min-h-screen pb-20 gap-6 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
       >
+        
         <Link href="/">
-          <Image src="/icon.png" alt="Miss France logo" width={180} height={38} />
-        </Link>
+          <Image src="/icon.png" alt="Miss France logo" width={180} height={38} />  
+        </Link> 
         {children}
       </body>
     </html>

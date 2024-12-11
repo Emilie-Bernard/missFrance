@@ -1,4 +1,4 @@
-import TestComponent from "@/components/testComponent";
+import TestComponent from "@/components/TestComponent";
 import { Test } from "@/interfaces/testInterface";
 import { getNotionTest } from "@/utils/notion";
 
