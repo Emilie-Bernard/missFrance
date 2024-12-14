@@ -114,7 +114,7 @@ const Tables: React.FC<TablesProps> = ({ miss }) => {
             {(item: MissWithGrade) => (
                 <TableRow onClick={() => router.push(`/miss/${encodeURIComponent(item.region)}`)} className="cursor-pointer hover:bg-gold bg-black text-white rounded-lg" key={item.name}>
                     <TableCell>{missRate?.map((grade: MissGrade) => grade.missId === item.region && item.finalNote)}</TableCell>
-                    <TableCell className="rounded-l-lg">{item.region}</TableCell>
+                    <TableCell>{item.region}</TableCell>
                     <TableCell>{item.name}</TableCell>
                     <TableCell>{item.age}</TableCell>
                 </TableRow>
